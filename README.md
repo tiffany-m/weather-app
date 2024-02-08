@@ -1,11 +1,11 @@
-# Title
-Quick Description
+# Weather App
+
 
 ## Directions
 - "npm install" to install dependences in package.json
 -  Commands to run
   -  npx webpack
-  -  npx webpack –-watch (continuously update, ctrl + c to stop)
+  -  npx webpack --watch (continuously update, ctrl + c to stop)
   -  npm run build 
 
 ## Build Status
@@ -15,8 +15,10 @@ Quick Description
 - CSS
 - JavaScript
 - Webpack
+- Weather API (https://api.weatherapi.com/)
 
 ## API Used
+WeatherAPI.com
 
 ## Known Bugs
 
