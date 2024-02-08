@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("// https://api.weatherapi.com/v1/current.json?key=11111111111111111&q=london\r\n// https://www.weatherapi.com/docs/\r\n\r\nconst url = \"http://api.weatherapi.com/v1\";\r\nconst key = \"496b725833e846e7b01194420243101\";\r\n// let location = document.getElementById('seachBar')\r\nlet location = \"Broomall\";\r\n\r\nasync function getWeather() {\r\n  const response = await fetch(`${url}/forecast.json?key=${key}&q=${location}&days=7`);\r\n  const data = await response.json();\r\n  console.log(data);\r\n}\r\n\r\ngetWeather();\r\n\n\n//# sourceURL=webpack://project_template_webpack/./src/index.js?");
+eval("// https://api.weatherapi.com/v1/current.json?key=11111111111111111&q=london\r\n// https://www.weatherapi.com/docs/\r\n\r\nconst url = \"http://api.weatherapi.com/v1\";\r\nconst key = \"496b725833e846e7b01194420243101\";\r\n// let location = document.getElementById('seachBar')\r\nlet location = \"Broomall\";\r\n\r\nasync function fetchWeather() {\r\n  try {\r\n  const response = await fetch(`${url}/forecast.json?key=${key}&q=${location}&days=7`);\r\n  const data = await response.json();\r\n  console.log(data);\r\n  } catch (error) {\r\n    console.log(error)\r\n  }\r\n}\r\n\r\nfetchWeather();\r\n\n\n//# sourceURL=webpack://project_template_webpack/./src/index.js?");
 
 /***/ })
 

@@ -6,10 +6,14 @@ const key = "496b725833e846e7b01194420243101";
 // let location = document.getElementById('seachBar')
 let location = "Broomall";
 
-async function getWeather() {
+async function fetchWeather() {
+  try {
   const response = await fetch(`${url}/forecast.json?key=${key}&q=${location}&days=7`);
   const data = await response.json();
   console.log(data);
+  } catch (error) {
+    console.log(error)
+  }
 }
 
-getWeather();
+fetchWeather();

@@ -15,6 +15,7 @@
 - CSS
 - JavaScript
 - Webpack
+- Fetch API
 - Weather API (https://api.weatherapi.com/)
 
 ## API Used

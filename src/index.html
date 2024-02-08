@@ -6,8 +6,21 @@
     <title>Project Template</title>
   </head>
   <body>
-    <label for="searchBar"></label>
-    <input type="search" id="searchBar" placeholder="search..." />
-    <input type="submit" id="submit" />
+    <div id="app-container">
+      <div id="header">
+        <div id="logo-container">
+          <img src="#" /><span class="header-title">Weather App</span>
+        </div>
+        <div id="searchbar-container">
+          <label for="searchbar"></label>
+          <input type="search" id="searchbar" placeholder="search..." />
+          <input type="submit" id="submit" />
+        </div>
+      </div>
+      <div id="content-container">
+        <div id="current-weather-container">Current Weather</div>
+        <div id="future-weather-container">Future Weather</div>
+      </div>
+    </div>
   </body>
 </html>
