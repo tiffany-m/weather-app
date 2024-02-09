@@ -7,8 +7,6 @@ const submit = document.getElementById("submit");
 const searchBar = document.getElementById("searchbar");
 let location = "Broomall";
 
-console.log(searchBar.value)
-
 const logo = document.getElementById("logo");
 logo.src = tempLogo;
 
