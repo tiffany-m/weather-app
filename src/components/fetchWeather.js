@@ -10,7 +10,6 @@ export async function fetchWeather(location) {
 
     if (response.status === 200) {
       let responseParsed = await response.json();
-      // console.log("Success:", responseParsed);
 
       return responseParsed;
     } else {

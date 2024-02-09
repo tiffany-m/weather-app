@@ -45,5 +45,4 @@ export async function getFutureWeather(location) {
   }
 
   updateFutureWeatherUI(threeDayArr);
-  console.log(threeDayArr);
 }

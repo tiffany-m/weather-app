@@ -22,16 +22,6 @@ export async function getCurrentWeather(location) {
     temp: data.current.temp_f,
   };
 
-  console.log(current)
-
   updateCurrentWeatherUI(current);
-
-  // console.log(
-  //   "Current Weather",
-  //   current.location,
-  //   current.condition,
-  //   current.conditionIcon,
-  //   current.temp,
-  // );
 }
 
