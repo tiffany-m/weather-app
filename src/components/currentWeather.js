@@ -1,16 +1,5 @@
 import { fetchWeather } from "./fetchWeather";
-
-let currentLocation = document.querySelector('.current-location');
-let currentCondition = document.querySelector(".current-condition");
-let currentConditionIcon = document.querySelector(".current-condition-icon");
-let currentTemp = document.querySelector(".current-temp");
-
-function updateCurrentWeatherUI(obj) {
-  currentLocation.innerText = obj.location;
-  currentCondition.innerText = obj.condition;
-  currentConditionIcon.src = obj.conditionIcon;
-  currentTemp.innerText = Math.round(obj.temp);
-}
+import { updateCurrentWeatherUI }  from "./displayWeather"
 
 export async function getCurrentWeather(location) {
   let data = await fetchWeather(location);

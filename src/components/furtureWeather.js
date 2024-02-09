@@ -1,14 +1,5 @@
 import { fetchWeather } from "./fetchWeather";
-
-let future = {
-  date: document.querySelectorAll(".future-date"),
-  condition: document.querySelectorAll(".future-condition"),
-  conditionIcon: document.querySelectorAll(".future-condition-icon"),
-  mintemp: document.querySelectorAll(".future-mintemp"),
-  maxtemp: document.querySelectorAll(".future-maxtemp"),
-};
-
-console.log("future", future);
+import { updateFutureWeatherUI } from "./displayWeather"
 
 function Day(date, condition, conditionIcon, minTemp, maxTemp) {
   (this.date = date),
@@ -16,16 +7,6 @@ function Day(date, condition, conditionIcon, minTemp, maxTemp) {
     (this.conditionIcon = conditionIcon),
     (this.minTemp = minTemp),
     (this.maxTemp = maxTemp);
-}
-
-function updateFutureWeatherUI(arr) {
-  arr.forEach((dayInfo, index) => {
-    future.date[index].innerText = dayInfo.date;
-    future.condition[index].innerText = dayInfo.condition;
-    future.conditionIcon[index].src = dayInfo.conditionIcon;
-    future.mintemp[index].innerText = Math.round(dayInfo.minTemp);
-    future.maxtemp[index].innerText = Math.round(dayInfo.maxTemp);
-  });
 }
 
 export async function getFutureWeather(location) {

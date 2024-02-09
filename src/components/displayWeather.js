@@ -1,0 +1,29 @@
+let currentLocation = document.querySelector(".current-location");
+let currentCondition = document.querySelector(".current-condition");
+let currentConditionIcon = document.querySelector(".current-condition-icon");
+let currentTemp = document.querySelector(".current-temp");
+let future = {
+  date: document.querySelectorAll(".future-date"),
+  condition: document.querySelectorAll(".future-condition"),
+  conditionIcon: document.querySelectorAll(".future-condition-icon"),
+  mintemp: document.querySelectorAll(".future-mintemp"),
+  maxtemp: document.querySelectorAll(".future-maxtemp"),
+};
+
+
+export function updateCurrentWeatherUI(obj) {
+  currentLocation.innerText = obj.location;
+  currentCondition.innerText = obj.condition;
+  currentConditionIcon.src = obj.conditionIcon;
+  currentTemp.innerText = Math.round(obj.temp);
+}
+
+export function updateFutureWeatherUI(arr) {
+  arr.forEach((dayInfo, index) => {
+    future.date[index].innerText = dayInfo.date;
+    future.condition[index].innerText = dayInfo.condition;
+    future.conditionIcon[index].src = dayInfo.conditionIcon;
+    future.mintemp[index].innerText = Math.round(dayInfo.minTemp);
+    future.maxtemp[index].innerText = Math.round(dayInfo.maxTemp);
+  });
+}
