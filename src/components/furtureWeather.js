@@ -7,10 +7,9 @@ function Day(condition, conditionIcon, minTemp, maxTemp) {
     (this.maxTemp = maxTemp);
 }
 
-export async function getFutureWeather() {
-  let data = await fetchWeather();
+export async function getFutureWeather(location) {
+  let data = await fetchWeather(location);
   let threeDayArr = [];
-  let day = {};
 
   for (let i = 0; i < 3; i++) {
     let dayInfo = new Day(

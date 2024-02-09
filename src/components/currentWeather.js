@@ -1,7 +1,7 @@
 import { fetchWeather } from "./fetchWeather";
 
-export async function getCurrentWeather() {
-  let data = await fetchWeather();
+export async function getCurrentWeather(location) {
+  let data = await fetchWeather(location);
 
   let current = {
     location: data.location.name,

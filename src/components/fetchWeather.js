@@ -1,9 +1,8 @@
 const url = "http://api.weatherapi.com/v1";
 const key = "496b725833e846e7b01194420243101";
-let location = "Broomall";
 
-export async function fetchWeather() {
-  //location = document.getElementById('seachBar');
+
+export async function fetchWeather(location) {
   try {
     const response = await fetch(
       `${url}/forecast.json?key=${key}&q=${location}&days=7`,
