@@ -9,7 +9,9 @@
     <div id="app-container">
       <div id="header">
         <div id="logo-container">
-          <img src="" id="logo" alt="logo"/><span class="header-title">Weather App</span>
+          <img src="" id="logo" alt="logo" /><span class="header-title"
+            >Weather App</span
+          >
         </div>
         <div id="searchbar-container">
           <label for="searchbar"></label>
@@ -17,13 +19,20 @@
           <input type="submit" id="submit" />
         </div>
       </div>
-      <hr/>
+      <hr />
       <div id="content-container">
-        <div id="current-weather-container">Current Weather</div>
-        <div class="current-location">Location:</div>
-        <img src="" alt="Current Weather Conditon" class="current-condition">
-        <div class="current-temp"></div>
-        <hr/>
+        <div id="current-weather">
+          Current Weather
+          <div class="current-location">Location:</div>
+          <div class="current-condition">Current Condition</div>
+          <img
+            src=""
+            class="current-condition-icon"
+            alt="Current Weather Conditon"
+          />
+          <div class="current-temp"></div>
+        </div>
+        <hr />
         <div id="future-weather-container">Future Weather</div>
       </div>
     </div>
