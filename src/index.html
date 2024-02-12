@@ -18,19 +18,19 @@
   <body>
     <div id="app-container">
       <div id="header">
-        <div id="logo-container">
-          <img src="" id="logo" alt="logo" />
-          <div class="header-title">Weather App</div>
-        </div>
-        <div id="searchbar-container">
-          <label for="searchbar"></label>
-          <input type="search" id="searchbar" placeholder="search..." />
-          <input type="submit" id="submit" />
-        </div>
+        <img src="" id="logo" alt="logo" />
+        <div class="header-title">Weather App</div>
       </div>
       <hr />
       <div id="current-weather-container">
-        <div class="current-weather-title">Current Weather</div>
+        <div id="current-search-container">
+          <div class="current-weather-title">Current Weather</div>
+          <div id="searchbar-container">
+            <label for="searchbar"></label>
+            <input type="search" id="searchbar" placeholder="search..." />
+            <input type="submit" id="submit" />
+          </div>
+        </div>
         <div id="weather-container">
           <div class="current-location"></div>
           <div class="current-weather">
