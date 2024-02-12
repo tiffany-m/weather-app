@@ -21,8 +21,18 @@ export function updateCurrentWeatherUI(obj) {
 
 export function updateFutureWeatherUI(arr) {
   arr.forEach((dayInfo, index) => {
+    let conditionPhrase = dayInfo.condition;
+    let conditionWords = conditionPhrase.split(" ");
+
+    for (let i = 0; i < conditionWords.length; i++) {
+      conditionWords[i] =
+        conditionWords[i][0].toUpperCase() + conditionWords[i].substr(1);
+    }
+    
+    conditionPhrase = conditionWords.join(" ");
+
     future.date[index].innerText = format(parseISO(dayInfo.date), "MM/dd/yyyy");
-    future.condition[index].innerText = dayInfo.condition;
+    future.condition[index].innerText = conditionPhrase;
     future.conditionIcon[index].src = dayInfo.conditionIcon;
     future.mintemp[index].innerText = `Low ${Math.round(dayInfo.minTemp)}°F`;
     future.maxtemp[index].innerText = `High ${Math.round(dayInfo.maxTemp)}°F`;
