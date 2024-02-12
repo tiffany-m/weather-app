@@ -16,10 +16,33 @@ body {
 }
 
 /* Header --------------------------------------------------------------------------------------- */
+#header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #logo {
-  width: 150px;
+  width: 100px;
 }
 
 .header-title {
+  font-size: 4rem;
+}
+
+/* Current Weather ---------------------------------------------------------------------------------------- */
+#current-weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-location {
   font-size: 4rem;
 }
