@@ -1,6 +1,5 @@
 html,
 body {
-  box-sizing: border-box;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
   height: 100vh;
@@ -9,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: gray;
+  background: #1E86E8;
 }
 
 #app-container {
@@ -24,6 +23,14 @@ body {
 .three-days-title {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+hr {
+  width: 100%;
+  height: 5px;
+   background-color: #1e86e8;
+  border: none;
+  border-radius: 5px;
 }
 
 /* Header --------------------------------------------------------------------------------------- */
