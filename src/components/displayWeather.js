@@ -15,7 +15,7 @@ export function updateCurrentWeatherUI(obj) {
   currentLocation.innerText = obj.location;
   currentCondition.innerText = obj.condition;
   currentConditionIcon.src = obj.conditionIcon;
-  currentTemp.innerText = Math.round(obj.temp);
+  currentTemp.innerText = `Temp ${Math.round(obj.temp)}°F`;
 }
 
 export function updateFutureWeatherUI(arr) {
@@ -23,7 +23,7 @@ export function updateFutureWeatherUI(arr) {
     future.date[index].innerText = dayInfo.date;
     future.condition[index].innerText = dayInfo.condition;
     future.conditionIcon[index].src = dayInfo.conditionIcon;
-    future.mintemp[index].innerText = Math.round(dayInfo.minTemp);
-    future.maxtemp[index].innerText = Math.round(dayInfo.maxTemp);
+    future.mintemp[index].innerText = `Low ${Math.round(dayInfo.minTemp)}°F`;
+    future.maxtemp[index].innerText = `High ${Math.round(dayInfo.maxTemp)}°F`;
   });
 }

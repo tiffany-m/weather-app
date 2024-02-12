@@ -1,5 +1,6 @@
 import "./style.css";
 import tempLogo from "./images/templogo.png";
+import search from "./images/magnifying-glass-solid.svg";
 import { getCurrentWeather } from "./components/currentWeather";
 import { getFutureWeather } from "./components/furtureWeather";
 

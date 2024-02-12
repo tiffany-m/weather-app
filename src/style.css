@@ -1,18 +1,30 @@
+html,
 body {
-  background: gray;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: gray;
 }
 
 #app-container {
-  border: 2px solid black;
   background: rgba(255, 255, 255, 0.5);
-  width: 50%;
-  height: 50%;
-  margin: auto;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.current-weather-title,
+.three-days-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+img {
+  border: 1px solid black;
 }
 
 /* Header --------------------------------------------------------------------------------------- */
@@ -29,10 +41,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: .5rem;
 }
 
 #logo {
-  width: 100px;
+  width: 4rem;
 }
 
 .header-title {
@@ -43,23 +56,50 @@ body {
 #current-weather-container {
   border: 2px solid black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#weather-container {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .current-location {
   border: 2px solid black;
-  font-size: 4rem;
+  font-size: 3rem;
+}
+
+.current-weather {
+  padding: .5rem 0;
 }
 
 /* Future Weather --------------------------------------------------------------------------------------------- */
 #future-weather-container {
   border: 2px solid black;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#three-days-container {
+  display: flex;
   justify-content: space-evenly;
 }
 
 .day {
-    border: 2px solid black;
-    width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  border: 2px solid black;
+  width: 33%;
+  padding: .5rem 0;
+}
+
+.future-date {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
