@@ -1,5 +1,7 @@
 html,
 body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -50,6 +52,7 @@ img {
 
 .header-title {
   font-size: 4rem;
+  font-weight: bold;
 }
 
 /* Current Weather ---------------------------------------------------------------------------------------- */

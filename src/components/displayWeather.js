@@ -1,3 +1,5 @@
+import { format, parseISO } from "date-fns";
+
 let currentLocation = document.querySelector(".current-location");
 let currentCondition = document.querySelector(".current-condition");
 let currentConditionIcon = document.querySelector(".current-condition-icon");
@@ -10,7 +12,6 @@ let future = {
   maxtemp: document.querySelectorAll(".future-maxtemp"),
 };
 
-
 export function updateCurrentWeatherUI(obj) {
   currentLocation.innerText = obj.location;
   currentCondition.innerText = obj.condition;
@@ -20,7 +21,7 @@ export function updateCurrentWeatherUI(obj) {
 
 export function updateFutureWeatherUI(arr) {
   arr.forEach((dayInfo, index) => {
-    future.date[index].innerText = dayInfo.date;
+    future.date[index].innerText = format(parseISO(dayInfo.date), "MM/dd/yyyy");
     future.condition[index].innerText = dayInfo.condition;
     future.conditionIcon[index].src = dayInfo.conditionIcon;
     future.mintemp[index].innerText = `Low ${Math.round(dayInfo.minTemp)}°F`;
