@@ -1,12 +1,12 @@
 body {
   background: gray;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 #app-container {
-    border: 2px solid black;
+  border: 2px solid black;
   background: rgba(255, 255, 255, 0.5);
   width: 50%;
   height: 50%;
@@ -17,7 +17,7 @@ body {
 
 /* Header --------------------------------------------------------------------------------------- */
 #header {
-    border: 2px solid black;
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -25,7 +25,7 @@ body {
 }
 
 #logo-container {
-    border: 2px solid black;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,13 +41,25 @@ body {
 
 /* Current Weather ---------------------------------------------------------------------------------------- */
 #current-weather-container {
-    border: 2px solid black;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .current-location {
-    border: 2px solid black;
+  border: 2px solid black;
   font-size: 4rem;
+}
+
+/* Future Weather --------------------------------------------------------------------------------------------- */
+#future-weather-container {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.day {
+    border: 2px solid black;
+    width: 33%;
 }
