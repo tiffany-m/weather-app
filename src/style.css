@@ -1,19 +1,21 @@
-html,
 body {
+  background: gray;
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/* Header --------------------------------------------------------------------------------------- */
-#header {
+#app-container {
+  background: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  border: 2px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-
-
+/* Header --------------------------------------------------------------------------------------- */
 #logo {
   width: 150px;
 }
