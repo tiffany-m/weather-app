@@ -9,10 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-    />
     <title>Weather App</title>
   <script defer src="main.js"></script></head>
   <body>
@@ -28,7 +24,9 @@
           <div id="searchbar-container">
             <label for="searchbar"></label>
             <input type="search" id="searchbar" placeholder="search..." />
-            <input type="submit" id="submit" />
+            <button type="submit" id="submit" class="search-button">
+              <img id="search-btn" />
+            </button>
           </div>
         </div>
         <div id="weather-container">

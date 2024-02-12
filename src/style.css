@@ -1,7 +1,8 @@
 html,
 body {
+  box-sizing: border-box;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -15,7 +16,8 @@ body {
   background: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  width: 600px;
+  padding: 2rem;
   border-radius: 10px;
 }
 
@@ -26,9 +28,9 @@ body {
 }
 
 hr {
+  background-color: #1e86e8;
   width: 100%;
   height: 5px;
-  background-color: #1e86e8;
   border: none;
   border-radius: 5px;
 }
@@ -38,7 +40,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 #logo {
@@ -54,19 +56,52 @@ hr {
 #current-weather-container {
   display: flex;
   flex-direction: column;
+  margin: 0.5rem 0;
   text-align: center;
 }
 
 #current-search-container {
-  border: 2px solid black;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #weather-container {
+  background: rgba(255, 255, 255, 0.25);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#searchbar-container {
+  font-size: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 0 5px 5px;
+  border-radius: 5px;
+}
+
+#searchbar {
+  width: calc(100% - 40px);
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#search-btn {
+  width: 20px;
 }
 
 .current-location {
@@ -78,23 +113,34 @@ hr {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 10px 0;
 }
 
 #three-days-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.three-days-title {
+  padding: 0 0 10px 0;
 }
 
 .day {
+  background: rgba(255, 255, 255, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
-  width: 33%;
-  padding: 0.5rem 0;
+  gap: 0.5rem;
+  width: 30%;
+  padding: 0.75rem 0;
+  border-radius: 5px;
 }
 
 .future-date {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.future-conditon {
+  display: block;
 }
