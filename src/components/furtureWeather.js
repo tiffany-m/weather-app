@@ -1,5 +1,5 @@
 import { fetchWeather } from "./fetchWeather";
-import { updateFutureWeatherUI } from "./displayWeather"
+import { updateFutureWeatherUI } from "./displayWeather";
 
 function Day(date, condition, conditionIcon, minTemp, maxTemp) {
   (this.date = date),

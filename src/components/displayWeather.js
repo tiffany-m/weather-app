@@ -28,7 +28,7 @@ export function updateFutureWeatherUI(arr) {
       conditionWords[i] =
         conditionWords[i][0].toUpperCase() + conditionWords[i].substr(1);
     }
-    
+
     conditionPhrase = conditionWords.join(" ");
 
     future.date[index].innerText = format(parseISO(dayInfo.date), "MM/dd/yyyy");

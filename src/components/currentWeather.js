@@ -1,5 +1,5 @@
 import { fetchWeather } from "./fetchWeather";
-import { updateCurrentWeatherUI }  from "./displayWeather"
+import { updateCurrentWeatherUI } from "./displayWeather";
 
 export async function getCurrentWeather(location) {
   let data = await fetchWeather(location);
@@ -13,4 +13,3 @@ export async function getCurrentWeather(location) {
 
   updateCurrentWeatherUI(current);
 }
-

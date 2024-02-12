@@ -1,7 +1,6 @@
 const url = "http://api.weatherapi.com/v1";
 const key = "496b725833e846e7b01194420243101";
 
-
 export async function fetchWeather(location) {
   try {
     const response = await fetch(
