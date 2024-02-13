@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 600px;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
   border-radius: 10px;
 }
 
@@ -67,30 +67,33 @@ hr {
 }
 
 #searchbar-container {
-  font-size: 1rem;
   background-color: white;
   display: flex;
-  align-items: center;
   margin: 5px 0;
   padding: 5px 0 5px 5px;
   border-radius: 5px;
 }
 
 #searchbar {
-  width: calc(100% - 40px);
-  padding-left: 10px;
+  font-size: 1rem;
+  width: calc(100% - 30px);
+  padding-left: 5px;
   border: none;
-  border-radius: 5px;
   outline: none;
 }
 
 .search-button {
   background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
   border: none;
   outline: none;
 }
+
 .search-button:active {
-    transform: scale(0.93);
+  transform: scale(0.93);
 }
 
 .search-btn-img {
