@@ -10,7 +10,7 @@ let location = "Broomall";
 
 const logo = document.getElementById("logo");
 logo.src = appLogo;
-const searchButton = document.getElementById("search-btn");
+const searchButton = document.querySelector(".search-btn-img");
 searchButton.src = magnifyingGlass;
 
 getCurrentWeather(location);

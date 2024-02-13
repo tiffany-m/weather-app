@@ -60,20 +60,10 @@ hr {
   text-align: center;
 }
 
-#current-search-container {
+#current-location-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#weather-container {
-  background: rgba(255, 255, 255, 0.25);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 #searchbar-container {
@@ -100,8 +90,18 @@ hr {
   outline: none;
 }
 
-#search-btn {
+.search-btn-img {
   width: 20px;
+}
+
+#weather-container {
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .current-location {
@@ -139,8 +139,4 @@ hr {
 .future-date {
   font-size: 1.25rem;
   font-weight: bold;
-}
-
-.future-conditon {
-  display: block;
 }
