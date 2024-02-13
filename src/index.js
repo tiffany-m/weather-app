@@ -1,26 +1,23 @@
 import "./style.css";
 import appLogo from "./images/templogo.png";
 import magnifyingGlass from "./images/search.png";
-import { getCurrentWeather } from "./components/currentWeather";
-import { getFutureWeather } from "./components/furtureWeather";
+import { fetchWeather } from "./components/fetchWeather";
 
 const submit = document.getElementById("submit");
 const searchBar = document.getElementById("searchbar");
+const logo = document.getElementById("logo");
+const searchButton = document.querySelector(".search-btn-img");
 let location = "Broomall";
 
-const logo = document.getElementById("logo");
 logo.src = appLogo;
-const searchButton = document.querySelector(".search-btn-img");
 searchButton.src = magnifyingGlass;
 
-getCurrentWeather(location);
-getFutureWeather(location);
+fetchWeather(location);
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   location = searchBar.value;
   searchBar.value = "";
 
-  getCurrentWeather(location);
-  getFutureWeather(location);
+  fetchWeather(location);
 });

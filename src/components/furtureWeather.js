@@ -1,4 +1,3 @@
-import { fetchWeather } from "./fetchWeather";
 import { updateFutureWeatherUI } from "./displayWeather";
 
 function Day(date, condition, conditionIcon, minTemp, maxTemp) {
@@ -9,8 +8,7 @@ function Day(date, condition, conditionIcon, minTemp, maxTemp) {
     (this.maxTemp = maxTemp);
 }
 
-export async function getFutureWeather(location) {
-  let data = await fetchWeather(location);
+export async function getFutureWeather(data) {
   let threeDayArr = [];
 
   for (let i = 0; i < 3; i++) {
@@ -24,6 +22,5 @@ export async function getFutureWeather(location) {
 
     threeDayArr.push(dayInfo);
   }
-
   updateFutureWeatherUI(threeDayArr);
 }
