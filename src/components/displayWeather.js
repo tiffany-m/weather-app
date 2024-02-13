@@ -25,8 +25,10 @@ export function updateFutureWeatherUI(arr) {
     let conditionWords = conditionPhrase.split(" ");
 
     for (let i = 0; i < conditionWords.length; i++) {
-      conditionWords[i] =
-        conditionWords[i][0].toUpperCase() + conditionWords[i].substr(1);
+      if (conditionWords[i]) { // Check if word is undefined to prevent error. Phrase "Partly cloudy" had an extra space at end.
+        conditionWords[i] =
+          conditionWords[i][0].toUpperCase() + conditionWords[i].substr(1);
+      }
     }
 
     conditionPhrase = conditionWords.join(" ");

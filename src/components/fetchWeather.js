@@ -12,7 +12,8 @@ export async function fetchWeather(location) {
 
       return responseParsed;
     } else {
-      console.log("Server Error:", data.error.message);
+      alert("Please enter valid city name.")
+      console.log("App has Server Error");
     }
   } catch (error) {
     console.log(`Error: ${error}`);
